@@ -1,0 +1,20 @@
+.skills-container {
+    background-color: rgb(240, 240, 240);
+    padding: 30px 10px;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0px 10px 22px -10px #000000; 
+    box-shadow: inset 0px 10px 22px -10px #000000;
+}
+.d-block {
+    width: auto;
+    height: 45px;
+    margin: 12px;
+}
+
+.landscape-logo {
+    max-height: 30px;
+}
+
+#express-logo {
+    height: 75px;
+}

@@ -1,0 +1,14 @@
+.projects-container {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item { 
+    padding: 20px;
+}
+
+.carousel-item img {
+    width: 50%;
+    height: auto;
+}
