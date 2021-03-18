@@ -14,22 +14,22 @@ function Contact() {
   const handleName = (event) => {
     setMessageData({ ...messageData, name: event.target.value });
   };
-  const handleEmail = (e) => {
-    setMessageData({ ...messageData, email: e.target.value });
+  const handleEmail = (event) => {
+    setMessageData({ ...messageData, email: event.target.value });
   };
-  const handleMessage = (e) => {
-    setMessageData({ ...messageData, message: e.target.value });
+  const handleMessage = (event) => {
+    setMessageData({ ...messageData, message: event.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     setMessageData({ ...messageData, status: 'Sending...' });
     const details = {
       name: messageData.name,
       email: messageData.email,
       message: messageData.message,
     };
-    const response = await fetch('https://portfolio-agbwebdeveloper.herokuapp.com/contact', {
+    const response = await fetch('https://portfolio-agbwebdeveloper.herokuapp.com//contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
