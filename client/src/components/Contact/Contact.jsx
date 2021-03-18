@@ -29,7 +29,7 @@ function Contact() {
       email: messageData.email,
       message: messageData.message,
     };
-    const response = await fetch('https://portfolio-agbwebdeveloper.herokuapp.com//contact', {
+    const response = await fetch('https://portfolio-agbwebdeveloper.herokuapp.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
