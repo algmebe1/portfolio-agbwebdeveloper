@@ -6,9 +6,9 @@ function ProjectItem({
   previmg, name, description, tags, ghlink,
 }) {
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center bg-light p-3 w-50 project-item-container">
+    <div className="d-flex flex-column justify-content-center align-items-center bg-light p-3 project-item-container">
       <img src={previmg} alt="project-preview" className="w-100 project-preview" />
-      <h1 className="text-left mt-3 project-title">{name}</h1>
+      <h3 className="text-left mt-3 project-title">{name}</h3>
       <p className="text-justify project-description">{description}</p>
       <div className="d-flex flex-row justify-content-between align-items-center">
         <div className="d-flex flex-wrap align-items-start w-75">
