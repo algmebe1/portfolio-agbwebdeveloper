@@ -4,15 +4,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 180px 20px 90px;
+    margin: 50px 20px;
 }
 
-.about-title > p{
+.about-title{
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     color: white;
     margin-block-start: 0;
     margin-block-end: 0;
+    margin: auto 20px;
 }
 
 .about-container > p {
@@ -23,5 +24,14 @@
 
 .about__introduction {
     max-width: 720px;
-    margin: 50px 10px;
+    margin: 50px 20px;
+}
+
+.logo-agb-container {
+    margin: 100px 0;
+}
+
+.about-logo {
+    width: 300px;
+    height: auto;
 }
