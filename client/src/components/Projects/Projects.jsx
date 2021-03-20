@@ -4,7 +4,7 @@ import ProjectItem from './ProjectItem/ProjectItem';
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <div id="projects-carousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li data-target="#projects-carousel" data-slide-to="0" className="active" />
