@@ -56,3 +56,23 @@
 .contact-link:hover {
     background-color: rgb(152,201,220);
 }
+
+.fa-bars {
+    font-size: 30px;
+    color: gray;
+}
+
+#dropdownMenuButton {
+    border: none;
+}
+
+.dropdownText {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
