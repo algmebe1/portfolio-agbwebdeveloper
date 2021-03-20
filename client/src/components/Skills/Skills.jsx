@@ -3,7 +3,7 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <div className="w-50 skills-container" id="skills">
+    <div className="skills-container" id="skills">
       <div className="d-flex flex-row align-items-center justify-content-around flex-wrap w-100">
         <a href="https://getbootstrap.com/" target="blank"><img className="d-block" src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/bootstrap-4.svg" alt="bootstrap-logo" /></a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank"><img className="d-block" src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/css-3.svg" alt="css-logo" /></a>
