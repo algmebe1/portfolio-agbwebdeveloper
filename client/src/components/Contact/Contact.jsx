@@ -43,7 +43,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container w-50" id="contact">
+    <div className="contact-container" id="contact">
       <form onSubmit={handleSubmit} method="POST">
 
         <div className="text-white text-center py-2">
