@@ -41,6 +41,7 @@ function Navigation() {
 
   return (
     <nav className="header__nav-buttons" ref={componentRef}>
+      <div className="header-alignment">
       <div>
         <img src="https://drive.google.com/uc?id=1hORgp_-iee8zbiLiZ6U8TH2QyjBVRQLL" alt="logo" className="header-logo" onClick={scrollToTop} />
       </div>
@@ -161,6 +162,7 @@ function Navigation() {
 
       
       )}
+      </div>
     </nav>
   );
 }
