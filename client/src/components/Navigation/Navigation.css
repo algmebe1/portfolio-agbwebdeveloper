@@ -47,6 +47,7 @@
     position: relative;
     margin-bottom: 3px;
     border: none;
+    background-color: rgb(240, 240, 240);
 }
 
 .dropdownNav {
