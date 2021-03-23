@@ -37,7 +37,9 @@ function Contact() {
       body: JSON.stringify(details),
     });
     setMessageData({ ...messageData, status: 'Submit' });
-    setMessageData({...messageData, name: '', email: '', message:''})
+    setMessageData({
+      ...messageData, name: '', email: '', message: '',
+    });
     const result = await response.json();
     alert(result.status);
   };
