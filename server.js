@@ -1,3 +1,5 @@
+import mailSettings from './mailconfig'
+
 const express = require('express')
 const router = express.Router()
 const cors = require('cors')
@@ -19,8 +21,8 @@ app.listen(port, () => console.log('Server Running'))
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'agbwebdeveloper2020@gmail.com',
-    pass: 'skylabmola'
+    user: mailSettings.address,
+    pass: mailSettings.pass
   }
 })
 
@@ -38,7 +40,7 @@ router.post('/contact', (req, res) => {
   const message = req.body.message
   const mail = {
     from: name,
-    to: 'agbwebdeveloper2020@gmail.com',
+    to: mailSettings.address,
     subject: 'Contact Form Message',
     html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`
   }
