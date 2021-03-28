@@ -3,7 +3,7 @@
 I have created this project as my portfolio website. I have used React with Hooks at Frontend and Express and Node including nodemailer for the contact form.
 
 This first version has been deployed in Heroku.
-You can visit the website at [https://portfolio-agbwebdeveloper.herokuapp.com/] (https://portfolio-agbwebdeveloper.herokuapp.com/) in the browser.
+You can visit the website at [https://portfolio-agbwebdeveloper.herokuapp.com/](https://portfolio-agbwebdeveloper.herokuapp.com/) in the browser.
 
 
 ## Available Scripts
