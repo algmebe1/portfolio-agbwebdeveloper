@@ -122,6 +122,7 @@ function Navigation() {
                     offset={-100}
                     duration={500}
                     onClick={handleClose}
+                    data-testid="about-link"
                   >
                     ABOUT
                   </Link>
@@ -134,6 +135,7 @@ function Navigation() {
                     offset={-100}
                     duration={500}
                     onClick={handleClose}
+                    data-testid="skills-link"
                   >
                     SKILLS
                   </Link>
@@ -146,6 +148,7 @@ function Navigation() {
                     offset={-100}
                     duration={500}
                     onClick={handleClose}
+                    data-testid="projects-link"
                   >
                     PROJECTS
                   </Link>
@@ -158,6 +161,7 @@ function Navigation() {
                     offset={-100}
                     duration={500}
                     onClick={handleClose}
+                    data-testid="contact-link"
                   >
                     CONTACT
                   </Link>
