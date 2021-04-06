@@ -19,6 +19,7 @@ function Navigation() {
   }, [width]);
 
   useEffect(() => {
+    // document.addEventListener('click', handleClick);
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
     function handleClick(e) {
@@ -26,7 +27,7 @@ function Navigation() {
         const ref = componentRef.current;
         if (!ref.contains(e.target)) {
           const dropdownNav = document.querySelector('.dropdownNav');
-          dropdownNav.style.visibility = 'hidden';
+          if (dropdownNav) dropdownNav.style.visibility = 'hidden';
           setDropdownStatus(false);
         }
       }
