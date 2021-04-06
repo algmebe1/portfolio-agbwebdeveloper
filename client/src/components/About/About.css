@@ -35,3 +35,22 @@
     width: 300px;
     height: auto;
 }
+
+.download-button {
+    background:linear-gradient(rgb(98,152,216), rgb(100,154,216)) ;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.download-button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+.download-button:hover {
+    background: #62bbd6;
+}

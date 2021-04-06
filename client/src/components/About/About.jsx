@@ -28,6 +28,13 @@ function About() {
         in order to convert something that I enjoy, which is coding, in my job.
 
       </p>
+      <div className="download-button">
+        <a href="https://drive.google.com/uc?export=download&id=1HpNqPx9x2FntMJHwpxMdopp2Ir4MXGXf">
+          <i className="fa fa-download" />
+          {' '}
+          Download Resume
+        </a>
+      </div>
     </div>
   );
 }
