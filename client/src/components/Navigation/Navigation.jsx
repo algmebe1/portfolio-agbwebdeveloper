@@ -9,6 +9,7 @@ function Navigation() {
   const [width, setWidth] = useState(window.innerWidth);
   const [dropdownStatus, setDropdownStatus] = useState(false);
   const componentRef = useRef();
+  const dropdownRef = useRef();
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -19,14 +20,13 @@ function Navigation() {
   }, [width]);
 
   useEffect(() => {
-    // document.addEventListener('click', handleClick);
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
     function handleClick(e) {
       if (componentRef && componentRef.current) {
         const ref = componentRef.current;
         if (!ref.contains(e.target)) {
-          const dropdownNav = document.querySelector('.dropdownNav');
+          const dropdownNav = dropdownRef.current;
           if (dropdownNav) dropdownNav.style.visibility = 'hidden';
           setDropdownStatus(false);
         }
@@ -35,7 +35,7 @@ function Navigation() {
   }, []);
 
   const handleClose = () => {
-    const dropdownNav = document.querySelector('.dropdownNav');
+    const dropdownNav = dropdownRef.current;
     dropdownNav.style.visibility = 'hidden';
     setDropdownStatus(false);
   };
@@ -102,7 +102,7 @@ function Navigation() {
                 type="button"
                 className="dropdownIcon"
                 onClick={() => {
-                  const dropdownNav = document.querySelector('.dropdownNav');
+                  const dropdownNav = dropdownRef.current;
                   if (dropdownNav.style.visibility === 'hidden') {
                     dropdownNav.style.visibility = 'visible';
                     setDropdownStatus(true);
@@ -114,7 +114,7 @@ function Navigation() {
               >
                 {dropdownStatus ? <i className="fa fa-times" /> : <i className="fa fa-bars" />}
               </button>
-              <div className="dropdownNav" style={{ visibility: 'hidden' }}>
+              <div ref={dropdownRef} className="dropdownNav" style={{ visibility: 'hidden' }}>
                 <button type="button">
                   <Link
                     activeClass="active"
