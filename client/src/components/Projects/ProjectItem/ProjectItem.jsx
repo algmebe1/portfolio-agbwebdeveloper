@@ -26,7 +26,7 @@ ProjectItem.propTypes = {
   previmg: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   ghlink: PropTypes.string.isRequired,
 };
 
