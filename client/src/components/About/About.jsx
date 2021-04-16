@@ -29,7 +29,7 @@ function About() {
 
       </p>
       <div className="download-button">
-        <a href="https://drive.google.com/uc?export=download&id=1HpNqPx9x2FntMJHwpxMdopp2Ir4MXGXf">
+        <a download href="https://drive.google.com/uc?export=download&id=1luS6z5T42NUVk-FWS9A4bVJk1iBnrCsE">
           <i className="fa fa-download" />
           {' '}
           Download Resume
